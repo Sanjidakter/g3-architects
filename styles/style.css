@@ -292,6 +292,11 @@ footer {
 /**********Mobile responsive***** */
 /**********************************/
 @media screen and (max-width: 576px) {
+  .intro {
+    width: 1920px;
+    height: 1000px;
+    background: rgba(255, 144, 14, 0.1);
+  }
   .intro,
   .navbar {
     margin-left: 0;
@@ -368,7 +373,7 @@ footer {
   }
   .third-section-img a {
     position: absolute;
-    bottom: 1em;
+    bottom: -1em;
     right: 38em;
     background-color: #e86909;
     color: #ffffff;
@@ -378,7 +383,7 @@ footer {
     text-decoration: none;
   }
   .fourth-section {
-    margin-top: 200%;
+    margin-top: 130%;
     margin-left: 0;
   }
   .fourth-section h2 {
@@ -393,9 +398,20 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .experience-points img {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    transition: width 5s ease 1s, height 5s, transform 5s;
+  }
+  .experience-points img:hover {
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+  }
   .fifth-section-title,
   .fifth-section-p {
     margin-left: 0;
+    width: 50%;
   }
   .logos {
     display: flex;
@@ -416,8 +432,8 @@ footer {
   .sixth-section h1 {
     margin-left: 0;
   }
-  .sixth-section .btn-primary {
-    margin-left: 0;
+  .sixth-section .colab-title .btn-primary {
+    margin-left: 15%;
   }
   .sixth-section img {
     margin-left: 0;
@@ -529,6 +545,7 @@ footer {
     margin-left: 0;
   }
   .fifth-section-p {
+    margin-left: 0;
     width: 50%;
   }
   .logos {
