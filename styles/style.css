@@ -11,12 +11,12 @@ body {
 }
 .navbar {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .navbar h3 {
   font-weight: 700;
   font-size: 45px;
-  text-align:start;
+  text-align: start;
   margin-left: 220px;
   color: #131313;
 }
@@ -34,7 +34,6 @@ li {
   line-height: 26px;
   text-align: center;
   color: #424242;
-  
 }
 
 .intro-info {
@@ -62,7 +61,7 @@ li {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  background-color: #FF900E;
+  background-color: #ff900e;
   color: #ffffff;
   border-radius: 5px;
 }
@@ -85,7 +84,7 @@ li {
   margin-top: 60px;
   margin-right: 40px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .team-img img {
   border-radius: 8px;
@@ -97,18 +96,18 @@ li {
   margin-left: 10px;
   margin-top: 200px;
 }
-.text-primary{
-    color:#FF900E;
-    font-weight: 700;
-    font-size: 45px;
+.text-primary {
+  color: #ff900e;
+  font-weight: 700;
+  font-size: 45px;
 }
-.quick{
-    font-weight: 500;
-font-size: 45px;
-line-height: 53px;
-/* Dark 03 */
+.quick {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  /* Dark 03 */
 
-color: #727272;
+  color: #727272;
 }
 .team-info p {
   margin-right: 301px;
@@ -125,11 +124,13 @@ color: #727272;
   border-radius: 8px;
   display: flex;
 }
-.third-section-info h2 {
+.third-section-info .p3 {
   font-weight: 700;
   font-size: 45px;
   color: #131313;
   margin-left: 240px;
+  border-left-style:  solid ;
+  border-color: #ff900e;
 }
 .third-section-info .p1 {
   margin-left: 260px;
@@ -171,8 +172,8 @@ color: #727272;
   text-decoration: none;
 }
 /* fourth section styles */
-
 .fourth-section h2 {
+  margin-top: 100px;
   width: 258px;
   margin-left: 240px;
   font-weight: 700;
@@ -181,25 +182,26 @@ color: #727272;
   color: #131313;
 }
 .fourth-section .p4 {
+  margin-top: 70px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   margin-left: 240px;
   width: 542px;
   color: #727272;
+  margin-bottom: 100px;
 }
 .experience-points img {
   display: grid;
-  grid-template-columns: (4,1fr);
+  grid-template-columns: (4, 1fr);
   margin-left: 40px;
   margin-bottom: 10px;
   transition: width 5s ease 1s, height 5s, transform 5s;
 }
-.experience-points img:hover{
+.experience-points img:hover {
   width: 80px;
   height: 80px;
   transform: rotate(45deg);
- 
 }
 .fourth-section-points {
   margin-top: 30px;
@@ -248,6 +250,28 @@ color: #727272;
   margin-bottom: 150px;
 }
 
+/* sixth styles */
+.sixth-section{
+  display: flex;
+  margin-left: 250px;
+  background-color: #dda98064;
+  margin-right: 320px;
+  margin-bottom: 130px;
+}
+.sixth-section h1{
+  margin-left: 70px;
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: #e86909;
+}
+.sixth-section img{
+ margin-left: 260px;
+ height: 400px;
+}
+
+/* footer styles */
 footer {
   margin-top: 30px;
   width: 1440px;
@@ -267,8 +291,9 @@ footer {
 /**********************************/
 /**********Mobile responsive***** */
 /**********************************/
-@media screen and (max-width:576px){
-  .intro,.navbar{
+@media screen and (max-width: 576px) {
+  .intro,
+  .navbar {
     margin-left: 0;
     display: flex;
     flex-direction: column;
@@ -277,82 +302,104 @@ footer {
   .navbar h3 {
     margin-left: 0;
   }
-  .intro-info,.intro-info h2,.intro-info p{
+  .intro-info,
+  .intro-info h2,
+  .intro-info p {
     margin-left: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  .intro-info h2{
+  .intro-info h2 {
     font-size: 30px;
   }
 
-  .intro-img{
+  .intro-img {
     border-radius: 8px;
     width: 342px;
     height: 242px;
     margin-left: 0;
-    
   }
-  .intro .btn-primary{
+  .intro .btn-primary {
     margin-left: 0;
   }
-  ul{
+  ul {
     display: flex;
     flex-direction: column;
     margin-left: 0;
   }
-  .second-section,.team-img {
+  .second-section,
+  .team-img {
     margin-left: 0;
-      display:flex;
-      flex-direction: column;
-  }
-  .third-section{
     display: flex;
     flex-direction: column;
   }
-  .third-section h2,.p1{
+  .third-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .third-section h2 {
     margin-left: 0;
   }
-  .p1{
+  .third-section-info .p3 {
     margin-left: 0;
   }
-  .cards-1, .cards-2, .cards-3 {
+  .third-section-info .p1{
     margin-left: 0;
   }
-  .third-section-img{
+  .cards-1,
+  .cards-2,
+  .cards-3 {
+    margin-left: 0;
+  }
+  .third-section-img {
     width: 100%;
   }
-  .fourth-section{
+  .fourth-section {
     margin-top: 150%;
     margin-left: 0;
   }
-  .fourth-section-points{
-      margin-left: 0;
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-  }
- .fifth-section-title,.fifth-section-p{
+  .fourth-section-points {
     margin-left: 0;
-    
- }
-  .logos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-section-title,
+  .fifth-section-p {
+    margin-left: 0;
+  }
+  .logos {
     display: flex;
     flex-direction: column;
     margin-left: 0;
   }
-  .logos img{
+  .logos img {
     margin-bottom: 40px;
-    size:30px;
+    size: 30px;
   }
-  footer{
+  .sixth-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  .sixth-section h1{
+    margin-left: 0;
+   
+  }
+  .sixth-section .btn-primary{
+    margin-left:0 ;
+  }
+  .sixth-section img {
     margin-left: 0;
   }
-  .footer-text{
+  footer {
+    margin-left: 0;
+  }
+  .footer-text {
     text-align: start;
   }
 }
-@media screen and (min-width: 577px) and (max-width:992px){
-  
+@media screen and (min-width: 577px) and (max-width: 992px) {
 }
