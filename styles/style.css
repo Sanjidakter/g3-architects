@@ -355,8 +355,25 @@ footer {
   .third-section-img {
     width: 100%;
   }
+  .third-section-img a {
+    position: absolute;
+    bottom: 1em;
+    right: 38em;
+    background-color: #e86909;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+  }
   .fourth-section {
-    margin-top: 150%;
+    margin-top: 300%;
+    margin-left: 0;
+  }
+  .fourth-section h2 {
+    margin-left: 0;
+  }
+  .fourth-section .p4 {
     margin-left: 0;
   }
   .fourth-section-points {
@@ -373,6 +390,138 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 0;
+  }
+  .logos img {
+    margin-bottom: 40px;
+    size: 30px;
+    width :20%;
+  }
+  .sixth-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  .sixth-section h1{
+    margin-left: 0;
+   
+  }
+  .sixth-section .btn-primary{
+    margin-left:0 ;
+  }
+  .sixth-section img {
+    margin-left: 0;
+  }
+  footer {
+    margin-left: 0;
+  }
+  .footer-text {
+    text-align: start;
+  }
+}
+/************************/
+/* For medium device */
+/************************/
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .intro,
+  .navbar {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar h3 {
+    margin-left: 0;
+  }
+  .intro-info,
+  .intro-info h2,
+  .intro-info p {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .intro-info h2 {
+    font-size: 30px;
+  }
+
+  .intro-img {
+    border-radius: 8px;
+    width: 742px;
+    height: 642px;
+    margin-left: 0;
+  }
+  .intro .btn-primary {
+    margin-left: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .second-section,
+  .team-img {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .third-section h2 {
+    margin-left: 0;
+  }
+  .third-section-info .p3 {
+    margin-left: 0;
+  }
+  .third-section-info .p1{
+    margin-left: 0;
+  }
+  .cards-1,
+  .cards-2,
+  .cards-3 {
+    margin-left: 0;
+  }
+  .third-section-img {
+    width: 100%;
+  }
+  .third-section-img a {
+    position: absolute;
+    bottom: 1em;
+    right: 28em;
+    background-color: #e86909;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+  }
+  .fourth-section {
+    margin-top: 200%;
+    margin-left: 0;
+  }
+  .fourth-section h2 {
+    margin-left: 0;
+  }
+  .fourth-section .p4 {
+    margin-left: 0;
+  }
+  .fourth-section-points {
+    margin-left: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth-section-title,
+  .fifth-section-p {
+    margin-left: 0;
+  }
+  .logos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width:30%;
   }
   .logos img {
     margin-bottom: 40px;
@@ -398,8 +547,6 @@ footer {
     margin-left: 0;
   }
   .footer-text {
-    text-align: start;
+    text-align: center;
   }
-}
-@media screen and (min-width: 577px) and (max-width: 992px) {
 }
